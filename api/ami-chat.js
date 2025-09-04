@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "OpenAI API key not configured." });
   }
 
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+  const response = await fetch("https://api.openai.com/v1/chat/completions"
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -47,4 +47,4 @@ export default async function handler(req, res) {
     return res.status(response.status).json({ error: data });
   }
   res.status(200).json(data);
-}res.setHeader("Access-Control-Allow-Origin", "https://amitheai.github.io");
+}res.setHeader("Access-Control-Allow-Origin", "https://A-l-p-a-c-a.github.io");
