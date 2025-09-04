@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   // CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "https://amitheai.github.io");
+  res.setHeader("Access-Control-Allow-Origin", "https://A-l-p-a-c-a.github.io");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
       "Authorization": `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: "gpt-4.1-mini",
+      model: "gpt-5",
       messages,
       max_tokens: 256,
       temperature: 0.8,
@@ -47,4 +47,4 @@ export default async function handler(req, res) {
     return res.status(response.status).json({ error: data });
   }
   res.status(200).json(data);
-}
+}res.setHeader("Access-Control-Allow-Origin", "https://amitheai.github.io");
