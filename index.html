@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>A.L.P.A.C.A.</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: red;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Impact, Arial, sans-serif;
-      font-size: 2rem;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>ALPACA Chat</title>
+  <link rel="stylesheet" href="alpacachat.css" />
 </head>
 <body>
-  A.L.P.A.C.A. = Artificial Language Processing And Conversational Asshole.
+  <h1>🥀 A.L.P.A.C.A. 🦙</h1>
+
+  <div class="chatbox">
+    <div id="messages"></div>
+    <form id="chatForm" autocomplete="off">
+      <input type="text" id="userInput" placeholder="Talk to ALPACA..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("chatForm");
+    const messagesDiv = document.getElementById("messages");
+    const input = document.getElementById("userInput");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const userMsg = input.value.trim();
+      if (!userMsg) return;
+
+      const msg = document.createElement("div");
+      msg.innerHTML = `<strong>YOU:</strong> ${userMsg}`;
+      messagesDiv.appendChild(msg);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+      input.value = "";
+    });
+  </script>
 </body>
 </html>
