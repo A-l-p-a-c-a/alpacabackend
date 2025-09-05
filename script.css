@@ -55,13 +55,13 @@ button {
 }
 
 .footer {
-  position: fixed;        /* stays stuck to the bottom */
-  bottom: 0;
-  width: 100%;            /* stretch across full page */
-  background-color: black; /* match your site’s style */
-  text-align: center;
-  font-size: 10px;         /* nice and small */
-  color: red;              /* your theme color */
-  padding: 5px 0;          /* a little breathing room */
-  border-top: 1px solid red; /* optional thin line above */
+  font-size: 10px;       /* make text small */
+  color: red;            /* text color */
+  text-align: center;    /* center align */
+  margin-top: 20px;      /* space above footer */
+}
+
+.footer p {
+  margin: 0;
+  padding: 5px;
 }
