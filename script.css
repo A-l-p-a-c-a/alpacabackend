@@ -53,3 +53,16 @@ button {
   cursor: pointer;
   padding: 10px 20px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #ff0000; /* matches your theme red */
+  font-family: monospace;
+  font-size: 12px;
+  padding: 5px;
+  background: #111; /* keeps contrast with page background */
+  border-top: 1px solid #ff0000;
+}
