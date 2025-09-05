@@ -10,13 +10,6 @@ body {
   flex-direction: column;    /* vertical stack */
 }
 
-.footer {
-  margin-top: auto;          /* push footer to bottom */
-  background: #222;
-  padding: 15px;
-  border: 2px solid #ff0000;
-}
-
 h1 {
   margin: 20px 0;
 }
@@ -62,5 +55,28 @@ button {
   border: none;
   cursor: pointer;
   padding: 10px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spacer-box {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 600px;
+  height: 150px; /* adjust how tall the empty space is */
+  border: 2px dashed #ff0000; /* optional, remove if you want it invisible */
+}
+
+footer {
+  background: #222;
+  color: #ff0000;
+  padding: 10px;
+  font-size: 12px;
+  border-top: 2px solid #ff0000;
+  text-align: center;
 }
 
