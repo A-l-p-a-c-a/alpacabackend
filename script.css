@@ -80,3 +80,16 @@ footer {
   text-align: center;
 }
 
+.disclaimer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* center the iframe horizontally */
+  margin-top: 20px;
+}
+
+.disclaimer-frame {
+  width: 90%;       /* make it almost full width */
+  height: 200px;    /* adjust height as you like */
+  border: 2px solid red; /* so you can see it now */
+  background: black;     /* placeholder background */
+}
