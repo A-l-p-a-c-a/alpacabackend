@@ -55,13 +55,13 @@ button {
 }
 
 .footer {
-  font-size: 10px;       /* make text small */
-  color: red;            /* text color */
-  text-align: center;    /* center align */
-  margin-top: 20px;      /* space above footer */
-}
-
-.footer p {
-  margin: 0;
-  padding: 5px;
+  position: fixed;     /* sticks it in one place */
+  bottom: 0;           /* push to the bottom */
+  left: 0;             /* align with left edge */
+  width: 100%;         /* stretch across screen */
+  font-size: 10px;     /* make it small */
+  color: red;
+  text-align: center;  /* center the text */
+  padding: 4px 0;
+  background-color: black; /* optional: helps it stand out */
 }
