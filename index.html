@@ -7,13 +7,17 @@
 </head>
 <body>
   <h1>🥀 A.L.P.A.C.A. 🦙</h1>
-<img src="Images/Pacadrill.png" alt="Alpaca Drill Sergeant" width="200">
+  <img src="Images/Pacadrill.png" alt="Alpaca Drill Sergeant" width="200">
+
+  <!-- Chat container (thinner) -->
+  <div class="chat-container">
     <div id="messages"></div>
     <form id="chatForm" autocomplete="off">
       <input type="text" id="userInput" placeholder="Talk to ALPACA..." required />
       <button type="submit">Send</button>
     </form>
-     </div>
+  </div>
+
   <script>
     const form = document.getElementById("chatForm");
     const messagesDiv = document.getElementById("messages");
@@ -32,14 +36,16 @@
       input.value = "";
     });
   </script>
-<!-- Container for rolling disclaimer -->
-<div class="disclaimer-container">
-  <iframe class="disclaimer-frame"></iframe>
-</div>
 
-<footer>
-  <p>A.L.P.A.C.A. = Artificial Language Processing And Conversational Asshole</p>
-  <p>© 2023 🦙 ALPACA INDUSTRIES. ALL RIGHTS RESERVED. SUCK IT.</p>
-</footer>
+  <!-- Empty spacer box for disclaimer -->
+  <div class="disclaimer-container">
+    <iframe class="disclaimer-frame"></iframe>
+  </div>
+
+  <!-- Footer full width -->
+  <footer>
+    <p>A.L.P.A.C.A. = Artificial Language Processing And Conversational Asshole</p>
+    <p>© 2023 🦙 ALPACA INDUSTRIES. ALL RIGHTS RESERVED. SUCK IT.</p>
+  </footer>
 </body>
 </html>
